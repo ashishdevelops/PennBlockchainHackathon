@@ -9,13 +9,14 @@ import Chip from '@mui/material/Chip'
 import Metamask from './react-metamask-medium/src/Metamask'
 import Radios from './Radios'
 import BasicCard from './BasicCard'
+import CardGrid from './CardGrid'
 
 const style = {
   position: 'absolute',
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: 400,
+  width: 1200,
   bgcolor: 'background.paper',
   border: '2px solid #000',
   boxShadow: 24,
@@ -59,13 +60,11 @@ export default function BasicModal() {
             <Chip label='OPTIONS' />
           </Divider>
 
-          <Radios
+          {/* <Radios
             value={value}
             handleChange={handleChange}
-          />
-          <BasicCard
-            value={value}
-          />
+          /> */}
+          <CardGrid />
         </Box>
       </Modal>
     </div>
