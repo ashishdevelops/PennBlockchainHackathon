@@ -16,6 +16,7 @@ import Footer from './Footer';
 import post1 from './blog-post.1.md';
 import post2 from './blog-post.2.md';
 import post3 from './blog-post.3.md';
+import Button from '@mui/material/Button'
 
 const sections = [
   { title: 'Technology', url: '#' },
@@ -78,12 +79,18 @@ const sidebar = {
 
 const theme = createTheme();
 
-export default function Blog() {
+export default function Blog({ setPage, page }) {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Container maxWidth="lg">
-        <Header title="The New York Times" sections={sections} />
+        <Header title="The New York Times" sections={sections} page={page} />
+        <Button
+          onClick={() => {setPage('home')}}
+          variant='contained'
+        >
+          Return to Home
+        </Button>
         <main>
           <div>
             <h1 id="sample-blog-post">Sample blog post</h1>

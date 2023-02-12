@@ -16,6 +16,7 @@ import post1 from './blog-post.1.md';
 import post2 from './blog-post.2.md';
 import post3 from './blog-post.3.md';
 import SubscribeButton from './kino/BasicModal'
+import Post from './Post'
 
 const sections = [
   { title: 'Technology', url: '#' },
@@ -87,6 +88,16 @@ const sidebar = {
 const theme = createTheme();
 
 export default function Blog() {
+  const [ page, setPage ] = React.useState('home')
+
+  if (page !== 'home') {
+    return (
+      <Post
+        setPage={setPage}
+        page={page}
+      />
+    )
+  }
 
   // var display = {
   //   () => {
@@ -102,10 +113,10 @@ export default function Blog() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Container maxWidth="lg">
-        <Header title="The New York Times" sections={sections} />
+        <Header title="The New York Times" sections={sections} page={page} />
         <main>
           <MainFeaturedPost post={mainFeaturedPost} />
-          <Grid container spacing={4} onClick={() => {}}>
+          <Grid container spacing={4} onClick={() => {setPage('article')}}>
             {featuredPosts.map((post) => (
               <FeaturedPost key={post.title} post={post} />
             ))}

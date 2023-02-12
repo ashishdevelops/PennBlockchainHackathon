@@ -28,9 +28,16 @@ const style = {
 };
 
 export default function BasicModal({ page }) {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = React.useState(page !== 'home');
   const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+  const handleClose = () => {
+    if (page === 'home') {
+      setOpen(false)
+    }
+  }
+  ;
+
+  console.log(page, open)
 
   const [value, setValue] = React.useState('Week');
 
