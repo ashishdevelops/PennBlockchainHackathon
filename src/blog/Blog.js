@@ -113,7 +113,7 @@ export default function Blog() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Container maxWidth="lg">
-        <Header title="The New York Times" sections={sections} page={page} />
+        <Header title="The Daily Bugle" sections={sections} page={page} />
         <main>
           <MainFeaturedPost post={mainFeaturedPost} />
           <Grid container spacing={4} onClick={() => {setPage('article')}}>

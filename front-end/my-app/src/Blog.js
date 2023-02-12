@@ -49,27 +49,26 @@ const Injected = new InjectedConnector({
 ];
 
 const mainFeaturedPost = {
-  title: 'Title of a longer featured blog post',
+  title: 'Great Spots for Pictures in Philadelphia',
   description:
     "Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.",
   image: 'https://source.unsplash.com/random',
-  imageText: 'main image description',
+  imageText: 'A Picture with Ben Franklin is a Philadelphia must',
   linkText: 'Continue reading…',
 };
 
 
 const featuredPosts = [
   {
-    title: 'Featured post',
-    date: 'Nov 12',
-    description:
-      'This is a wider card with supporting text below as a natural lead-in to additional content.',
-    image: 'https://source.unsplash.com/random',
-    imageLabel: 'Image Text',
+    title: 'Spider-Man: Hero Or Threat? A Thorough Investigation',
+    date: 'Feb 12',
+    description: '',
+    image: '',
+    imageLabel: '',
   },
   {
-    title: 'Post title',
-    date: 'Nov 11',
+    title: 'Why People Need Sleep',
+    date: '',
     description:
       'This is a wider card with supporting text below as a natural lead-in to additional content.',
     image: 'https://source.unsplash.com/random',

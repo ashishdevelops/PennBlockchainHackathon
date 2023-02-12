@@ -50,8 +50,10 @@
 // });
 
 // Address where the smart contract is deployed
-import Web3 from 'web3';
 import abi from "./SubscriptionManagerABI.json";
+const Web3 = require('web3');
+
+
 const contractAddress = "0xC26B1E05D1acF6d2Ae49212135E9DA8857E8C256";
 
 // Create a contract object from the ABI and address
@@ -59,8 +61,8 @@ const contractAddress = "0xC26B1E05D1acF6d2Ae49212135E9DA8857E8C256";
 //const web3 = new Web3(window.ethereum);
 //await window.ethereum.enable();
 
-const web3 = new Web3(Web3.givenProvider);
-const contract = new web3.eth.contract(abi.abi).at(contractAddress);;
+//const web3 = new Web3(Web3.givenProvider);
+//const contract = new web3.eth.contract(abi.abi).at(contractAddress);
 
 async function walletConnect(contract) {
     const rtn = await contract.methods.walletConnect().send();
@@ -69,23 +71,40 @@ async function walletConnect(contract) {
 }
 
 async function hasNFT(contract, account) {
-    const rtn = await contract.methods.balanceOf(account).call();
-    return rtn;
+    try {
+        const rtn = await contract.methods.balanceOf(account).call();
+        return rtn;
+    } catch(err) {
+        console.error(err);
+    }
 }
 
 async function getRoyaltys(contract,id) {
-    const rtn = await contract.methods.getRoyaltys(id).call();
-    return rtn;
+    try {
+        const rtn = await contract.methods.getRoyaltys(id).call();
+        return rtn;
+    } catch(err) {
+        console.error(err);
+    }
 }
 
-async function addSubscription(sender, contract) {
-    const rtn = await contract.methods.addSubscription().send({from: sender});
-    return rtn;
+async function addSubscription1(sender, contract) {
+    await console.log("Yo", contract)
+    try {
+        const rtn = await contract.addSubscription.sendTransaction({from: sender});
+        return rtn;
+    } catch(err) {
+        console.error(err);
+    }
 }
 
 async function cancelSubscription(sender, contract) {
-    const rtn = await contract.methods.cancelSubscription().send({from: sender});
-    return rtn;
+    try {
+        const rtn = await contract.methods.cancelSubscription().send({from: sender});
+        return rtn;
+    } catch(err) {
+        console.error(err);
+    }
 }
 
 async function updateRate(sender, contract, newRate) {
@@ -117,4 +136,4 @@ async function maxWithdrawForPublisher(sender, contract) {
 
 
 
-export {walletConnect, getRoyaltys, addSubscription, cancelSubscription, contract, updateRate, maxWithdrawForSubscriber, maxWithdrawForPublisher, hasNFT}
+export {walletConnect, getRoyaltys, addSubscription1, cancelSubscription, updateRate, maxWithdrawForSubscriber, maxWithdrawForPublisher, hasNFT}

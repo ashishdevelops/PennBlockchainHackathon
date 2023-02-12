@@ -8,7 +8,7 @@ import Chip from '@mui/material/Chip'
 
 import Metamask from './react-metamask-medium/src/Metamask'
 import Radios from './Radios'
-import BasicCard from './BasicCard'
+import BasicCard from './react-metamask-medium/src/BasicCard'
 import CardGrid from './CardGrid'
 import Grid from '@mui/material/Unstable_Grid2';
 import mainLogo from'./Kino_Logo4.png';
@@ -29,11 +29,20 @@ const style = {
 };
 
 export default function BasicModal({ page }) {
+  const [valid, setValid] = React.useState(false);
   const [open, setOpen] = React.useState(page !== 'home');
-  const handleOpen = () => setOpen(true);
+  const handleOpen = () => { setOpen(true); }
+  const handleValid = () => {
+    setValid(true);
+    console.log("VALID");
+    setOpen(false);
+    console.log("OPEN");
+  }
   const handleClose = () => {
-    if (page === 'home') {
+    console.log("BOOP");
+    if (page === 'home' || valid) {
       setOpen(false)
+      console.log("CLOSED");
     }
   }
   ;

@@ -1,4 +1,4 @@
-{"abi" : [
+{"abi": [
 	{
 		"inputs": [],
 		"name": "addSubscription",
@@ -566,4 +566,5 @@
 		"stateMutability": "view",
 		"type": "function"
 	}
-]}
+]
+}

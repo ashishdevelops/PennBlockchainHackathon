@@ -91,44 +91,17 @@ export default function Blog({ setPage, page }) {
         >
           Return to Home
         </Button>
-        <main>
-          <div>
-            <h1 id="sample-blog-post">Sample blog post</h1>
-              <p><em>April 1, 2020 by <a href="/">Olivier</a></em></p>
-              <p>This blog post shows a few different types of content that are supported and styled with
-              Material styles. Basic typography, images, and code are all supported.
-              You can extend these by modifying <code>Markdown.js</code>.</p>
-              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-              Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
-              Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
-              <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo.
-              Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p>Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum.
-              Aenean lacinia bibendum nulla sed consectetur.</p>
-              <h2 id="heading">Heading</h2>
-              <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-              Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-              Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-              <h3 id="sub-heading-1">Sub-heading 1</h3>
-              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-              <h3 id="sub-heading-2">Sub-heading 2</h3>
-              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-              Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod.
-              Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo
-              sit amet risus.</p>
-              <ul>
-              <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
-              <li>Donec id elit non mi porta gravida at eget metus.</li>
-              <li>Nulla vitae elit libero, a pharetra augue.</li>
-              </ul>
-              <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
-              <ol>
-              <li>Vestibulum id ligula porta felis euismod semper.</li>
-              <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
-              <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
-              </ol>
-              <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
-          </div>
+          <main>
+            <h1>SPIDER-MAN: HERO OR THREAT? A THOROUGH INVESTIGATION</h1>
+<h2>By J. Jonah Jameson, Editor-in-Chief of the Daily Bugle</h2>
+<p>For years, the citizens of New York City have been both captivated and frightened by the masked vigilante known as Spider-Man. With his superhuman abilities and quick reflexes, he has certainly been effective in stopping crime on the streets. But the question remains: is he truly a hero, or just another dangerous menace to society?</p>
+<p>Let's examine the facts. In his early days, Spider-Man was nothing more than a reckless teenager with a costume, interfering with police work and causing more problems than he solved. He has been involved in numerous destructive battles, putting innocent lives at risk and causing millions of dollars in property damage. It's one thing to stop a criminal, but it's another thing entirely to destroy half a city block in the process. Is this the type of hero we want in our city?</p>
+<p>And what about his secret identity? How can we trust a man who hides behind a mask and refuses to reveal his true motives? His actions are those of a vigilante, taking the law into his own hands without any accountability. It's clear that he has no regard for due process or the rule of law. He operates outside the confines of our justice system, and there is no way to hold him accountable for his actions. What if he were to make a mistake, or worse, use his powers for evil purposes? The thought is chilling.</p>
+<p>Some may argue that Spider-Man has saved countless lives, and that his actions are for the greater good. They point to the numerous times he has stopped criminals and saved innocent people from harm. But at what cost? When does the end justify the means? Is it acceptable for a masked vigilante to use his powers to deliver street justice, no matter the consequences?</p>
+<p>And let's not forget the psychological impact that Spider-Man has had on the city. People are living in fear, constantly looking over their shoulder, worried that the next time they hear the sound of web-slinging, it might be the end for them. This type of constant stress and anxiety takes a toll on the citizens of this city, and it's time for it to stop.</p>
+<p>It is time for the citizens of New York City to ask themselves: do we really want a masked man with god-like powers prowling the streets, operating outside the law? Is Spider-Man truly a hero, or just another dangerous threat that must be stopped?</p>
+<p>The Daily Bugle has been at the forefront of reporting on this controversial figure, bringing you the truth about Spider-Man, no matter the cost. Our team of experienced journalists will leave no stone unturned as we uncover the facts about this so-called hero, and expose the truth to the public. We have received numerous tips from sources who claim to have information about his true identity, and we will stop at nothing to uncover the truth and bring it to the public.</p>
+<p>And let's not forget the property damage that he has caused. The destruction that he leaves in his wake is a burden on taxpayers, who are left to pick up the pieces and pay for the repairs. It's not just the physical damage either, but the psychological toll that it takes on the citizens of this city who are constantly living in fear of the next attack from Spider-Man.</p>
         </main>
       </Container>
       <Footer
