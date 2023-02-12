@@ -5,6 +5,7 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import IconButton from "@mui/material/IconButton";
 
 const bull = (
   <Box
@@ -33,9 +34,32 @@ export default function BasicCard({ value }) {
   const rate = 10 ** 18 / 7 / 24 / 60 / 60;
   // 1 dollar per week, with 18 decimals, divided by 7 days, 24 hours, 60 minutes, and 60 seconds
 
+  const styles = {
+    "&.MuiButton-root": {
+      background: "linear-gradient(to right, #ECA4F2, #005B97)!important",
+      border: "2px black solid",
+    },
+    "&.MuiButton-text": {
+      color: "grey"
+    },
+    "&.MuiButton-contained": {
+      color: "white"
+    },
+    "&.MuiButton-outlined": {
+      color: "brown"
+    },
+    ':hover': {
+      background: "linear-gradient(to right, #eda8f3, #005e9d)!important", // theme.palette.primary.main
+      color: 'white',
+    }
+
+  };
+  
+  
+
   return (
     <Card sx={{ minWidth: 275 }}>
-      <CardContent>
+      <CardContent >
         <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
           {days} days
         </Typography>
@@ -51,9 +75,22 @@ export default function BasicCard({ value }) {
           {'"a benevolent smile"'}
         </Typography>
       </CardContent>
+      <br />
+      <br />
       <CardActions>
-        <Button>Subscribe</Button>
+      
+        <Button variant='contained'  sx={styles} style = {{margin: 'auto'}}>
+
+          <p><b>Subscribe with </b></p>
+          <img src={require('./Kino_Logo3.png')} 
+                width="60" 
+                height="25"
+                style = {{ marginLeft: '0.5rem', marginRight: '0.5rem' }}
+                alt="Kino_Logo3.png"/>
+        </Button>
+        
       </CardActions>
+      <br />
     </Card>
   );
 }

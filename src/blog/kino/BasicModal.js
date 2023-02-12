@@ -10,6 +10,10 @@ import Metamask from './react-metamask-medium/src/Metamask'
 import Radios from './Radios'
 import BasicCard from './BasicCard'
 import CardGrid from './CardGrid'
+import Grid from '@mui/material/Unstable_Grid2';
+import mainLogo from'./Kino_Logo4.png';
+import IconButton from "@mui/material/IconButton";
+//import buttonLogo from'./Kino_Logo3.png';
 
 const style = {
   position: 'absolute',
@@ -23,7 +27,7 @@ const style = {
   p: 4,
 };
 
-export default function BasicModal() {
+export default function BasicModal({ page }) {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -33,11 +37,20 @@ export default function BasicModal() {
   const handleChange = (event) => {
     setValue(event.target.value);
   };
+  /*
+    <Button onClick={handleOpen} variant='outlined'>
+            Subscribe
+          </Button>
+  */
+  /*
+
+
+  */
 
   return (
     <div>
       <Button onClick={handleOpen} variant='outlined'>
-        Subscribe
+            Subscribe
       </Button>
       <Modal
         open={open}
@@ -46,11 +59,16 @@ export default function BasicModal() {
         aria-describedby="modal-modal-description"
       >
         <Box sx={style}>
+        <img src={require('./Kino_Logo4.png')} 
+              width="15%" 
+              height="15%"
+              //style={{float:"right", marginLeft: '0.8rem', marginRight: '0.8rem'}}
+              alt="Kino_Logo4.png"/>
           <Metamask />
           <br />
-
-          <Typography id="modal-modal-title" variant="h6" component="h2">
-            Subscription Manager
+          <br />
+          <Typography id="modal-modal-title" variant="h5" component="h2">
+            <b>Subscription Manager</b>
           </Typography>
           <Typography id="modal-modal-description" sx={{ mt: 2 }}>
             Read all the news that's fit to print, for just $1 per week
@@ -64,9 +82,13 @@ export default function BasicModal() {
             value={value}
             handleChange={handleChange}
           /> */}
+          <br />
           <CardGrid />
+          <br />
         </Box>
+        
       </Modal>
+      
     </div>
   );
 }

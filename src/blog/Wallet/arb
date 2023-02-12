@@ -1,0 +1,62 @@
+(⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂) ⠦ idealTree:codespaces-react: sill idealTree build(⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂) ⠦ idealTree:codespaces-react: sill idealTree build(⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂) ⠧ idealTree:codespaces-react: sill idealTree build(⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂⠂) ⠙ idealTree:codespaces-react: sill idealTree build
+npm ERR! code ERESOLVE
+npm ERR! ERESOLVE could not resolve
+npm ERR! 
+npm ERR! While resolving: web3-react@5.0.5
+npm ERR! Found: react@18.2.0
+npm ERR! node_modules/react
+npm ERR!   peer react@">=16.8.0" from @emotion/react@11.10.5
+npm ERR!   node_modules/@emotion/react
+npm ERR!     peer @emotion/react@"^11.0.0-rc.0" from @emotion/styled@11.10.5
+npm ERR!     node_modules/@emotion/styled
+npm ERR!       peerOptional @emotion/styled@"^11.3.0" from @mui/material@5.11.8
+npm ERR!       node_modules/@mui/material
+npm ERR!         peer @mui/material@"^5.0.0" from @mui/icons-material@5.11.0
+npm ERR!         node_modules/@mui/icons-material
+npm ERR!         1 more (the root project)
+npm ERR!       3 more (@mui/styled-engine, @mui/system, the root project)
+npm ERR!     peerOptional @emotion/react@"^11.5.0" from @mui/material@5.11.8
+npm ERR!     node_modules/@mui/material
+npm ERR!       peer @mui/material@"^5.0.0" from @mui/icons-material@5.11.0
+npm ERR!       node_modules/@mui/icons-material
+npm ERR!         @mui/icons-material@"^5.11.0" from the root project
+npm ERR!       1 more (the root project)
+npm ERR!     3 more (@mui/styled-engine, @mui/system, the root project)
+npm ERR!   peer react@">=16.8.0" from @emotion/styled@11.10.5
+npm ERR!   node_modules/@emotion/styled
+npm ERR!     peerOptional @emotion/styled@"^11.3.0" from @mui/material@5.11.8
+npm ERR!     node_modules/@mui/material
+npm ERR!       peer @mui/material@"^5.0.0" from @mui/icons-material@5.11.0
+npm ERR!       node_modules/@mui/icons-material
+npm ERR!         @mui/icons-material@"^5.11.0" from the root project
+npm ERR!       1 more (the root project)
+npm ERR!     peerOptional @emotion/styled@"^11.3.0" from @mui/styled-engine@5.11.8
+npm ERR!     node_modules/@mui/styled-engine
+npm ERR!       @mui/styled-engine@"^5.11.8" from @mui/system@5.11.8
+npm ERR!       node_modules/@mui/system
+npm ERR!         @mui/system@"^5.11.8" from @mui/material@5.11.8
+npm ERR!         node_modules/@mui/material
+npm ERR!     2 more (@mui/system, the root project)
+npm ERR!   23 more (@emotion/use-insertion-effect-with-fallbacks, ...)
+npm ERR! 
+npm ERR! Could not resolve dependency:
+npm ERR! peer react@"^16.8" from web3-react@5.0.5
+npm ERR! node_modules/web3-react
+npm ERR!   web3-react@"^5.0.5" from the root project
+npm ERR! 
+npm ERR! Conflicting peer dependency: react@16.14.0
+npm ERR! node_modules/react
+npm ERR!   peer react@"^16.8" from web3-react@5.0.5
+npm ERR!   node_modules/web3-react
+npm ERR!     web3-react@"^5.0.5" from the root project
+npm ERR! 
+npm ERR! Fix the upstream dependency conflict, or retry
+npm ERR! this command with --force or --legacy-peer-deps
+npm ERR! to accept an incorrect (and potentially broken) dependency resolution.
+npm ERR! 
+npm ERR! 
+npm ERR! For a full report see:
+npm ERR! /home/codespace/.npm/_logs/2023-02-12T02_29_58_144Z-eresolve-report.txt
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/codespac

@@ -6,12 +6,14 @@ import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
+import { Menu, MenuItem, Box } from '@mui/material';
 
 import SubscribeButton from './kino/BasicModal'
-import ConnectButton from './kino/react-metamask-medium/src/Metamask'
+import ConnectButton from './kino/react-metamask-medium/src/Metamask';
+import BasicMenu from './Wallet/WalletDropdown';
 
 function Header(props) {
-  const { sections, title } = props;
+  const { sections, title, page } = props;
 
   return (
     <React.Fragment>
@@ -32,7 +34,10 @@ function Header(props) {
         </IconButton>
 
         {/* <ConnectButton /> */}
-        <SubscribeButton />
+        <SubscribeButton
+          page={page}
+        />
+        {/* <BasicMenu /> */}
 
       </Toolbar>
       <Toolbar
