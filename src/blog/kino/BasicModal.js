@@ -14,6 +14,7 @@ import Grid from '@mui/material/Unstable_Grid2';
 import mainLogo from'./Kino_Logo4.png';
 import IconButton from "@mui/material/IconButton";
 //import buttonLogo from'./Kino_Logo3.png';
+import {addSubscription, contract} from "../../web3Interfaces/SubscriptionManager"
 
 const style = {
   position: 'absolute',
