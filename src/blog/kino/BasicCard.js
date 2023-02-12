@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 import IconButton from "@mui/material/IconButton";
 import {addSubscription, contract} from "../../web3Interfaces/SubscriptionManager";
 import { GetAccount } from "./react-metamask-medium/src/App";
-import { injected } from '../components/wallet/connectors'
+import { injected } from './src/components/wallet/connectors';
 import { useWeb3React } from '@web3-react/core';
 
 
@@ -62,8 +62,8 @@ export default function BasicCard({ value }) {
 
 
   function clickHandler(){
-    aw
-    addSubscription(, contract);
+    
+    //addSubscription(, contract);
   }
   
   
